@@ -1,21 +1,21 @@
 <template>
   <h1>Events for good</h1>
   <div class="events">
-    <EventCard v-for='event in events' :key='event.id' :event='event' />
+    <EventCard v-for="event in events" :key="event.id" :event="event" />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import EventCard from "@/components/EventCard.vue";
+import EventCard from '@/components/EventCard.vue'
 
 export default {
-  name: "Home",
+  name: 'Home',
   components: {
     EventCard
   },
-  data(){
-    return{
+  data() {
+    return {
       events: [
         {
           id: 5928101,
@@ -53,11 +53,11 @@ export default {
       ]
     }
   }
-};
+}
 </script>
 
 <style scoped>
-  .events {
+.events {
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -7,16 +7,15 @@
 
 <script>
 export default {
-  name: "EventCard",
+  name: 'EventCard',
   props: {
     event: Object
-  },
-};
+  }
+}
 </script>
 
-
 <style scoped>
-  .event-card {
+.event-card {
   padding: 20px;
   width: 250px;
   cursor: pointer;
